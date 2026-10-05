@@ -45,19 +45,19 @@ O(n)
 
 **Answer**: Stack
 
-**Justification**:
+**Justification**: Stacks are the easiest data type to delete the value of the last index using pop. This program seems to want to remove from the most recent intersection (value in stack) and go from there. 
 
 2. A server receives a massive influx of data packets from a streaming video application. To prevent the video from skipping or playing out of order on the user's end, the server must process and forward these packets in the exact sequence they were received.
 
 **Answer**: Queue
 
-**Justification**:
+**Justification**: 
 
 3. An atmospheric monitoring system reads temperature data from 10,000 sequentially numbered sensors (IDs 0 through 9999). Throughout the day, the system needs to constantly update and read the current temperature of randomly selected sensors based on their ID number to build localized weather maps.
 
 **Answer**: Array
 
-**Justification**:
+**Justification**: 
 
 4. You are building a lightweight syntax checker for a code editor. Its sole job is to scan a document and ensure that every opened parenthesis `(`, bracket `[`, and brace `{` is matched with its corresponding closing character in the correct nested order.
 
@@ -78,7 +78,7 @@ O(n)
 
  **Answer**: Cubic time complexity, $\mathcal{O}(n^3)$
 
-**Justification**: So the execution time when doubling the number of elements is equal to multiplying the previous by 8 (.94/.12, 7.61/.94, and 60.85/7.61 are all around 8). 2^3 = 8, so we know the running time is close to the equation of n^3 because that 2 represents the doubling. Making it big O of n^3.
+**Justification**: So the execution time when doubling the number of elements is equal to multiplying the previous by 8 (.94/.12, 7.61/.94, and 60.85/7.61 are all around 8). 2^3 = 8, so we know the running time is close to the equation of n^3 because that 2 represents the doubling. Making it big O of n^3. 
 
  2. Two students write separate algorithms to compute a metric over an array of 10 million integers. Both algorithms perform exactly one mathematical operation per element, meaning both have a theoretical time complexity of $O(N)$. However, during benchmarking, Algorithm A consistently runs 15x faster than Algorithm B. Why might theoretical Big-O analysis fail to predict this massive performance gap? 
 
@@ -145,4 +145,4 @@ Which of these three strategies guarantees an optimal solution (maximum number o
 
 **Answer**: The earliest finish strategy guarantees an optimal solution.
 
-**Justification**: 
+**Justification**:
